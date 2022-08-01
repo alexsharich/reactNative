@@ -2,7 +2,7 @@ import React from "react";
 import {StyleSheet,View ,Text,Button}from 'react-native'
 import { gStyle } from "../styles/style";
 
-export default function Contacts ({navigation}){
+export default function FullInfo ({route}){
 
     /* const loadScene = ()=>{
         navigation.goBack()
@@ -10,7 +10,8 @@ export default function Contacts ({navigation}){
 
     return (
         <View style={gStyle.main}>
-           <Text style={gStyle.title}>Contacts page</Text>
+           <Text style={gStyle.title}>{route.params.name}</Text>
+           <Text style={gStyle.title}>{route.params.full}</Text>
            {/* <Button title='go on main page' onPress={loadScene}/> */}
         </View>
     )

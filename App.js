@@ -1,9 +1,8 @@
 import React ,{useState} from 'react';
 import {  StyleSheet} from 'react-native';
-import {gStyle} from './styles/style'
 import * as  Font from 'expo-font'
 import AppLoading from 'expo-app-loading'
-import Main from './components/Main';
+import MainStack from './navigate/navigate';
 
 const fonts = ()=> Font.loadAsync({
   'mt-bold':require('./fonts/Montserrat-Italic-VariableFont_wght.ttf'),
@@ -16,7 +15,7 @@ export default function App() {
 
   if(font){
     return (
-     <Main/>
+     <MainStack/>
     );
   }else {
     return (

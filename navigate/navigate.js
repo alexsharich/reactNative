@@ -17,7 +17,7 @@ export default function Navigate(){
                 { 
                     title:'Main page title',
                     headerStyle:{backgroundColor:'red', height:90},
-                    headerTitleStyle:{fontWeight:'light'}
+                    headerTitleStyle:{fontWeight:'200'}
                 }
                 }/>
              <Stack.Screen
